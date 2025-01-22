@@ -6,8 +6,8 @@ import { Image } from "lucide-react";
 import React from "react";
 import { BiCheck } from "react-icons/bi";
 
-async function page({ params }: { params: { slug?: string } }) {
-  const { slug } = await params;
+async function page({ params }: { params?: { slug?: string } }) {
+  const slug = (await params)?.slug;
   const service = SERVICES.filter((service) => service.slug === slug);
 
   return (
