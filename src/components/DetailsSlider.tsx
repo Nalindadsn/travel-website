@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-function DetailsSlider({ images }: any) {
+function DetailsSlider({ images }: { images: any }) {
   const [active, setActive] = useState(0);
 
   return (
