@@ -15,7 +15,7 @@ function DetailsSlider({ images }: { images: any }) {
         height={500}
       />
       <div className="flex w-full gap-2 mt-2">
-        {images.map((x) => (
+        {images.map((x: string | any) => (
           <div
             key={`${x}-${images.indexOf(x)}`}
             className="w-1/4 cursor-pointer"
