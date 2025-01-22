@@ -15,9 +15,9 @@ function DetailsSlider({ images }: { images: any }) {
         height={500}
       />
       <div className="flex w-full gap-2 mt-2">
-        {images.map((x: any) => (
+        {images.map(({ x }: { x: any }) => (
           <div
-            key={`${x}-${Math.floor(Math.random() * (1000 - 100 + 1)) + 100}`}
+            key={`${x}-${images.indexOf(x)}`}
             className="w-1/4 cursor-pointer"
             onClick={() => setActive(images.indexOf(x))}
           >

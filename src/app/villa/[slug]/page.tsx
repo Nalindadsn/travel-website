@@ -78,7 +78,7 @@ async function page({ params }: { params: { slug: string } }) {
                   </span>
                   <ul className="ml-5 list-disc	 text-gray-600 dark:text-gray-300 text-sm my-2">
                     {service[0]?.features &&
-                      service[0]?.features.map((x: any) => (
+                      service[0]?.features.map((x) => (
                         <li
                           key={`${x}-${
                             Math.floor(Math.random() * (1000 - 100 + 1)) + 100
