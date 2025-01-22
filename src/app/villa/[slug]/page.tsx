@@ -6,7 +6,7 @@ import { Image } from "lucide-react";
 import React from "react";
 import { BiCheck } from "react-icons/bi";
 
-async function page({ params }: { params?: { slug?: string } }) {
+export default async function Post({ params }: any) {
   const slug = (await params)?.slug;
   const service = SERVICES.filter((service) => service.slug === slug);
 
@@ -109,5 +109,3 @@ async function page({ params }: { params?: { slug?: string } }) {
     </div>
   );
 }
-
-export default page;
