@@ -2,8 +2,7 @@
 import { Map } from "lucide-react";
 import { Suspense, useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
-
-function Location({ url }: any) {
+function Location({ url }: { url: string }) {
   const [map, setMap] = useState(false);
   return map ? (
     <div className="mt-5">
