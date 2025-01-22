@@ -13,7 +13,14 @@
     --foreground: #ededed;
   }
 }
+a{
+  text-decoration: none !important;
+  /* color: #14A44D !important; */
+}
+footer a{
+    color: #919191 !important;
 
+}
 body {
   color: var(--foreground);
   background: var(--background);
