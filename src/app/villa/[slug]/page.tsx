@@ -55,7 +55,7 @@ async function page({ params }: { params: { slug: string } }) {
                         </span>
                       </>
                     )}
-                  {service[0]?.availability === "Not Available" && (
+                  {service[0]?.availability === "Not Available" ? (
                     <>
                       <span className="font-bold text-gray-700 dark:text-gray-300">
                         Availability:
@@ -64,6 +64,8 @@ async function page({ params }: { params: { slug: string } }) {
                         X Not available
                       </span>
                     </>
+                  ) : (
+                    ""
                   )}
                   {}
                 </div>
