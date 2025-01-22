@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
   },
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off",
+  },
 };
 
 export default nextConfig;
